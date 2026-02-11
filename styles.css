@@ -1,0 +1,417 @@
+html{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+main,body{
+    max-width: 100vw;
+    margin: 0%;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    font-size: 2.6rem;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    scroll-margin-top: 5rem;
+}
+
+#profile-section{
+    padding-top: 11rem;
+    background-color: rgb(160, 207, 241);
+}
+
+#profile-section h2{
+    margin-bottom: 5rem;
+}
+
+#profile-section p{
+    font-size: 1.2rem;
+    max-width: 55rem;
+    text-align: center;
+    line-height: 1.5;
+}
+
+#profile-section a{
+    border: 2px black solid;
+    padding: 1.2rem;
+    border-radius: .5rem;
+    transition: background-color .25s ease, color .25s ease;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+}
+
+#profile-section a:hover{
+    cursor: pointer;
+    background-color: transparent;
+    color: black;
+}
+
+#profile-section img{
+    border-radius: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    background-color: black;
+    top: 0;
+    left: 0;
+    color: white;
+    z-index: 2;
+}
+
+nav ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    column-gap: 1.5rem;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+#about-me {
+    min-height: fit-content;
+    margin-bottom: 10rem;
+    
+}
+
+#about-me p{
+    font-size: 1.2rem;
+    max-width: 55rem;
+    text-align: center;
+    line-height: 1.5;
+}
+
+#about-me ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    column-gap: 5rem;
+}
+
+.skill-badge{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.3rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: black;
+    color: white;
+}
+ .skill-badge img{
+    border-radius: 1rem;
+    height: 10rem;
+    width: auto;
+ }
+
+ .skill-badge:hover{
+    transform: scale(1.02,1.02);
+    border: 2px solid black;
+ }
+
+#quote-container{
+    background-color: rgb(160, 207, 241);
+    padding: 3rem 0;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#quote-container p{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+#coursework-section {
+    color: black;
+    padding: 0;
+    border: grey 1px solid;
+    width: 80vw;
+    align-self: center;
+    border-radius: 1rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+    background-color: rgb(160, 207, 241);
+
+}
+
+.coursework-badge-list{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    column-gap: 3.5rem;
+}
+
+.coursework-badge{
+    border: black 2px solid;
+    font-size: 1.2rem;
+    padding: 1rem;
+    width: 15rem;
+    transition: background-color .25s ease, color .25s ease;
+    background-color: black;
+    color: white;
+    border-radius: 1rem;
+}
+
+.coursework-badge:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+
+.title-banner {
+    color: rgb(34, 25, 209);
+    font-size: 1.4rem;
+    font-weight: bold;
+    
+
+}
+
+.coursework-divider{
+    background-color: grey;
+    height: 2px;
+    width: 60%;
+}
+
+#interest-cards-list{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 7rem
+}
+
+.interest-card{
+    border: 1px solid grey;
+    padding: 3rem;
+    border-radius: 1rem;
+    background-color: rgb(160, 207, 241);
+}
+
+.interest-card h3{
+    font-size: 1.9rem;
+}
+
+.interest-card ul{
+    list-style: none;
+    padding: 0;
+
+}
+
+.interest-card p{
+    font-size: 1.3rem;
+}
+
+#contact-options{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 5rem;
+}
+
+.contact-options-card{
+    border: 1px solid grey;
+    padding: 3rem;
+    border-radius: 1rem;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    position: relative;
+}
+
+.link{
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.contact-options-card:hover{
+    cursor: pointer;
+    transform: scale(1.02, 1.02);
+    background-color: rgb(160, 207, 241);
+}
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5rem;
+}
+
+
+footer{
+    background-color: black;
+    color: white;
+    width: 98vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+footer ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    column-gap: 1rem;
+}
+
+.footer-card{
+    border: 2px solid white;
+    padding: .5rem;
+    border-radius: .5rem;
+    transition: background-color .25s ease, color .25s ease;
+    position: relative;
+}
+
+.footer-card:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+@media(max-width: 480px){
+    nav {
+        justify-content: space-evenly;
+        position: fixed;
+        top: 0;
+    }
+
+    nav h1{
+        display: none;
+    }
+
+    #profile-section{
+        padding: 0 .9rem;
+        padding-top: 9rem;
+    }
+    
+    #profile-section h2{
+        text-align: center;
+    }
+
+    #about-me {
+        padding: 0 .9rem;
+        padding-top : 8rem;
+    }
+    
+    #about-me ul{
+        row-gap: 2.5rem;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+    
+    #coursework-section {
+        width: 90vw;
+        margin-top: 5rem;
+        text-align: center;
+    
+    }
+    
+    .coursework-badge-list{
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+    
+    .coursework-banner{
+        max-width: 100%;
+    }
+
+    #interest-cards-list{
+        flex-direction: column;
+        row-gap: 4rem;
+    }
+    
+    #contact-options{
+        flex-direction: column;
+        row-gap: 3rem;
+    }
+
+    #contact{
+
+        row-gap: 1rem;
+    }
+
+    #quote-container{
+        width: 100vw;
+    }
+    
+}
+
+@media (max-width: 1048px){
+    nav {
+        justify-content: space-evenly;
+        position: fixed;
+        top: 0;
+    }
+
+    #profile-section{
+        padding: 9rem .9rem;
+        min-height: auto;
+    }
+    
+    #coursework-section {
+        width: 90vw;
+        text-align: center;
+        min-height: auto;
+        justify-self: flex-start;
+        margin-bottom: 7rem;
+        margin-top: 6rem;
+        scroll-margin-top: 7rem;
+        
+    }
+    
+    .coursework-badge-list{
+        column-gap: 1rem;
+    }
+    
+    hr{
+        width: 90% !important; 
+    }
+
+    #interest-section{
+        min-height: fit-content !important;
+        margin-bottom: 5rem;
+    }
+    
+    #contact-options{
+        column-gap: 3rem;
+    }
+
+    #contact{
+        padding: 0;
+        row-gap: 1rem;
+        min-height: fit-content !important;
+
+    }
+
+    .contact-options-card{
+        padding: 2rem
+    }
+
+    footer{
+        max-width: 100vw !important;
+    }
+
+}
